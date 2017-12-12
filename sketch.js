@@ -16,8 +16,8 @@ var nasiImg;
 var item;
 
 function setup() {
-    canvas = createCanvas(windowWidth, windowHeight);
-    canvas.position(20, 30);
+    canvas = createCanvas(1400, 700);
+    canvas.position(20, 50);
     var button = select('#submit');
     button.mousePressed(CallWeather);
     input = select('#city');
