@@ -78,7 +78,7 @@ function draw() {
                     fill(255,255,255);
                     rect(width/3 -50,height/2 - 60,180,60,10);
                     fill(0,0,0);
-                    textSize(18);
+                    textSize(15);
                     text("It's so cold today!", width/3+40, height/2-30);
                     text("Please wear a padding!", width/3+40, height/2-15);  
                     fill(255,255,255);
@@ -90,7 +90,7 @@ function draw() {
             fill(255,255,255);
                     rect(width/3 -50,height/2 - 60,180,60,10);
                     fill(0,0,0);
-                    textSize(18);
+                    textSize(15);
                     text("It's a little cold today!", width/3+40, height/2-30);
                     text("You can wear a coat!", width/3+40, height/2-15);  
                     fill(255,255,255);
@@ -102,7 +102,7 @@ function draw() {
             fill(255,255,255);
                     rect(width/3 -50,height/2 - 60,180,60,10);
                     fill(0,0,0);
-                    textSize(18);
+                    textSize(15);
                     text("Its a cool weather!", width/3+40, height/2-30);
                     text("You can wear man to man!", width/3+40, height/2-15);  
                     fill(255,255,255);
@@ -114,7 +114,7 @@ function draw() {
             fill(255,255,255);
                     rect(width/3 -50,height/2 - 60,180,60,10);
                     fill(0,0,0);
-                    textSize(18);
+                    textSize(15);
                     text("Its a great weather!", width/3+40, height/2-30);
                     text("You can wear shirts!", width/3+40, height/2-15);  
                     fill(255,255,255);
@@ -126,7 +126,7 @@ function draw() {
             fill(255,255,255);
                     rect(width/3 -50,height/2 - 60,180,60,10);
                     fill(0,0,0);
-                    textSize(18);
+                    textSize(15);
                     text("Its a little hot today!", width/3+40, height/2-30);
                     text("You can wear t-shirts!", width/3+40, height/2-15);  
                     fill(255,255,255);
@@ -138,7 +138,7 @@ function draw() {
             fill(255,255,255);
                     rect(width/3 -50,height/2 - 60,180,60,10);
                     fill(0,0,0);
-                    textSize(18);
+                    textSize(15);
                     text("Its very hot today!", width/3+40, height/2-30);
                     text("You can wear nanings!", width/3+40, height/2-15);  
                  
