@@ -14,20 +14,27 @@ var shirtImg;
 var tshirtImg;
 var nasiImg;
 var item;
+var penguin;
 
 function setup() {
     canvas = createCanvas(windowWidth, 700);
-    canvas.position(20, 50);
-    var button = select('#submit');
+    canvas.position(0, 50);
+    var button2 = select('#submit2');
+    var button = select('#submit');      
     button.mousePressed(CallWeather);
-    input = select('#city');
-        paddingImg = loadImage("penguin1.png");
-         coatImg = loadImage("penguin2.png");
-         manImg = loadImage("penguin3.png");
-         shirtImg = loadImage("penguin4.png");
-        tshirtImg = loadImage("penguin5.png");
-         nasiImg = loadImage("penguin6.png");
+    button2.mousePressed(CallWeather);
+         input = select('#city');
+    
+    
+    
+    paddingImg = loadImage("penguin1.png");
+    coatImg = loadImage("penguin2.png");
+    manImg = loadImage("penguin3.png");
+    shirtImg = loadImage("penguin4.png");
+    tshirtImg = loadImage("penguin5.png");
+    nasiImg = loadImage("penguin6.png");
     item = loadImage("umbrella.png");
+    penguin = loadImage("penguinpressed.png");
 }
 
 function CallWeather() {
@@ -46,7 +53,7 @@ function gotData(data) {
         Sdrop[k] = new SnowDrop();
     }
 
-    for (var k = 0; k< 20; k++) {
+    for (var k = 0; k < 20; k++) {
         Cdrop[k] = new CloudsDrop();
     }
 }
@@ -65,105 +72,117 @@ function draw() {
         //City Name
         textSize(30);
         fill(255);
-        text(floor(todaytemp) + "\u2103", 160, 130);
+        text(floor(todaytemp) + "\u2103", 160, 140);
         // average temp
         textSize(17);
-        text("Max:" + floor(todaymax) + "\u2103", 160, 160);
-        text("Min:" + floor(todaymin) + "\u2103", 160, 180);
+        text("Max: " + floor(todaymax) + "\u2103", 160, 180);
+        text("Min: " + floor(todaymin) + "\u2103", 160, 200);
         // max and min temp
 
         //different penguin images according to the temperature
-        if (todaytemp <= -3){
-            image(paddingImg, width/2.5, height/2,  paddingImg.width/2.5, paddingImg.height/2.5);
-                    fill(255,255,255);
-                    rect(width/3 -50,height/2 - 60,180,60,10);
-                    fill(0,0,0);
-                    textSize(15);
-                    text("It's so cold today!", width/3+40, height/2-30);
-                    text("Please wear a padding!", width/3+40, height/2-15);  
-                    fill(255,255,255);
-                    textSize(18);
-                    text(weatherdata.name,width/2-50, height/2+150);         
+        if (todaytemp <= -3) {
+            if(mouseIsPressed && mouseY > height/2 && mouseX > width/2.5 && mouseX < width/1.8){
+                press();
+            }
+            else{
+            image(paddingImg, width / 2.5, height / 2, paddingImg.width / 2.5, paddingImg.height / 2.5);
+            fill(255, 255, 255);
+            rect(width / 3 - 50, height / 2 - 60, 180, 60, 10);
+            fill(0, 0, 0);
+            text("It's so cold today!", width / 3 + 40, height / 2 - 30);
+            text("Please wear a padding!", width / 3 + 40, height / 2 - 15);
+            fill(255, 255, 255);
+            textSize(18);
+            text(weatherdata.name, width / 2.1, height / 1.4);
         }
-        else if ( (-3 < todaytemp) && (todaytemp <= 10)){
-            image(coatImg, width/2.5, height/2,  paddingImg.width/2.5, paddingImg.height/2.5);
-            fill(255,255,255);
-                    rect(width/3 -50,height/2 - 60,180,60,10);
-                    fill(0,0,0);
-                    textSize(15);
-                    text("It's a little cold today!", width/3+40, height/2-30);
-                    text("You can wear a coat!", width/3+40, height/2-15);  
-                    fill(255,255,255);
-                    textSize(15);
-                    text(weatherdata.name,width/2, height/2+210);
+        } else if ((-3 < todaytemp) && (todaytemp <= 10)) {
+            if(mouseIsPressed && mouseY > height/2 && mouseX > width/2.5 && mouseX < width/1.8){
+                press();
+            }
+            else{
+            image(coatImg, width / 2.5, height / 2, paddingImg.width / 2.5, paddingImg.height / 2.5);
+            fill(255, 255, 255);
+            rect(width / 3 - 50, height / 2 - 60, 180, 60, 10);
+            fill(0, 0, 0);
+            text("It's a little cold today!", width / 3 + 40, height / 2 - 30);
+            text("You can wear a coat!", width / 3 + 40, height / 2 - 15);
+            fill(255, 255, 255);
+            textSize(15);
+            text(weatherdata.name, width / 1.93, height / 1.25);
         }
-        else if ( (10 < todaytemp) && (todaytemp <= 20)){
-            image(manImg, width/2.5, height/2,  paddingImg.width/2.5, paddingImg.height/2.5);
-            fill(255,255,255);
-                    rect(width/3 -50,height/2 - 60,180,60,10);
-                    fill(0,0,0);
-                    textSize(15);
-                    text("Its a cool weather!", width/3+40, height/2-30);
-                    text("You can wear man to man!", width/3+40, height/2-15);  
-                    fill(255,255,255);
-                    textSize(18);
-                    text(weatherdata.name,width/2-50, height/2+180);
+        } else if ((10 < todaytemp) && (todaytemp <= 20)) {
+            if(mouseIsPressed && mouseY > height/2 && mouseX > width/2.5 && mouseX < width/1.8){
+                press();
+            }
+            else{
+            image(manImg, width / 2.5, height / 2, paddingImg.width / 2.5, paddingImg.height / 2.5);
+            fill(255, 255, 255);
+            rect(width / 3 - 50, height / 2 - 60, 180, 60, 10);
+            fill(0, 0, 0);
+            text("Its a cool weather!", width / 3 + 40, height / 2 - 30);
+            text("You can wear a sweater!", width / 3 + 40, height / 2 - 15);
+            fill(255, 255, 255);
+            textSize(18);
+            text(weatherdata.name,width / 2.1, height / 1.33);
         }
-        else if ( (20 < todaytemp) && (todaytemp <= 25)){
-            image(shirtImg, width/2.5, height/2,  paddingImg.width/2.5, paddingImg.height/2.5);
-            fill(255,255,255);
-                    rect(width/3 -50,height/2 - 60,180,60,10);
-                    fill(0,0,0);
-                    textSize(15);
-                    text("Its a great weather!", width/3+40, height/2-30);
-                    text("You can wear shirts!", width/3+40, height/2-15);  
-                    fill(255,255,255);
-                    textSize(15);
-                    text(weatherdata.name,width/2+5, height/2+180);
+        } else if ((20 < todaytemp) && (todaytemp <= 25)) {
+            if(mouseIsPressed && mouseY > height/2 && mouseX > width/2.5 && mouseX < width/1.8){
+                press();
+            }
+            else{
+            image(shirtImg, width / 2.5, height / 2, paddingImg.width / 2.5, paddingImg.height / 2.5);
+            fill(255, 255, 255);
+            rect(width / 3 - 50, height / 2 - 60, 180, 60, 10);
+            fill(0, 0, 0);
+            text("Its a great weather!", width / 3 + 40, height / 2 - 30);
+            text("You can wear shirts!", width / 3 + 40, height / 2 - 15);
+            fill(255, 255, 255);
+            textSize(15);
+            text(weatherdata.name, width / 1.93, height / 1.32);
         }
-        else if ( (25 < todaytemp) && (todaytemp <= 30)){
-            image(tshirtImg, width/2.5, height/2,  paddingImg.width/2.5, paddingImg.height/2.5);
-            fill(255,255,255);
-                    rect(width/3 -50,height/2 - 60,180,60,10);
-                    fill(0,0,0);
-                    textSize(15);
-                    text("Its a little hot today!", width/3+40, height/2-30);
-                    text("You can wear t-shirts!", width/3+40, height/2-15);  
-                    fill(255,255,255);
-                    textSize(18);
-                    text(weatherdata.name,width/2-50, height/2+170);
+        } else if ((25 < todaytemp) && (todaytemp <= 30)) {
+            if(mouseIsPressed && mouseY > height/2 && mouseX > width/2.5 && mouseX < width/1.8){
+                press();
+            }
+            else{
+            image(tshirtImg, width / 2.5, height / 2, paddingImg.width / 2.5, paddingImg.height / 2.5);
+            fill(255, 255, 255);
+            rect(width / 3 - 50, height / 2 - 60, 180, 60, 10);
+            fill(0, 0, 0);
+            text("Its a little hot today!", width / 3 + 40, height / 2 - 30);
+            text("You can wear T-shirts!", width / 3 + 40, height / 2 - 15);
+            fill(255, 255, 255);
+            textSize(18);
+            text(weatherdata.name, width / 2.1, height / 1.35);
         }
-        else{
-            image(nasiImg, width/2.5, height/2,  paddingImg.width/2.5, paddingImg.height/2.5);
-            fill(255,255,255);
-                    rect(width/3 -50,height/2 - 60,180,60,10);
-                    fill(0,0,0);
-                    textSize(15);
-                    text("Its very hot today!", width/3+40, height/2-30);
-                    text("You can wear nanings!", width/3+40, height/2-15);  
-                 
+        } else {
+            if(mouseIsPressed && mouseY > height/2 && mouseX > width/2.5 && mouseX < width/1.8){
+                press();
+            }
+            else{
+            image(nasiImg, width / 2.5, height / 2, paddingImg.width / 2.5, paddingImg.height / 2.5);
+            fill(255, 255, 255);
+            rect(width / 3 - 50, height / 2 - 60, 180, 60, 10);
+            fill(0, 0, 0);
+            text("Its very hot today!", width / 3 + 40, height / 2 - 30);
+            text("You can wear nanings!", width / 3 + 40, height / 2 - 15);
+        } 
         }
-        
-        
-        
-
 
         var d = new Date();
         var c = d.getHours();
-        if (c <= 12){
-            fill(255,255-c*10,0);
-        }
-        else {
-            fill(255,100+10*(c-12),0);
+        if (c <= 12) {
+            fill(255, 255 - c * 10, 0);
+        } else {
+            fill(255, 100 + 10 * (c - 12), 0);
         }
         ellipse(width - 200, 100, 100, 100); // sun changing colors
 
         // background color changes as day and night changes
-        if( (7 <= c) && (c <= 18) ){
+        if ((7 <= c) && (c <= 18)) {
             var t = select('.selectcity');
             t.style("backgroundColor", "#7EC0EE");
-        }
-        else{
+        } else {
             var t = select('.selectcity');
             t.style("backgroundColor", "#16191e");
         }
@@ -173,15 +192,15 @@ function draw() {
             for (var j = Rdrop.length - 1; j >= 0; j--) {
                 Rdrop[j].show();
                 Rdrop[j].fall();
-                image(item, width/2 -75, height/2-95,  item.width/2.5, item.height/2.5);
-             } // raining scene
+                image(item, width / 2.2, height / 2.75, item.width / 2.5, item.height / 2.5);
+            } // raining scene
         }
         if (weatherdata.weather[0].main == "Snow") {
             for (var j = Sdrop.length - 1; j >= 0; j--) {
                 Sdrop[j].show();
                 Sdrop[j].fall();
             } //snowing scene
-        } 
+        }
 
         if (weatherdata.weather[0].main == "Clouds") {
             for (var j = Cdrop.length - 1; j >= 0; j--) {
@@ -196,7 +215,7 @@ function RainDrop() {
     this.x = random(0, width);
     this.y = random(-1000, 0);
     this.show = function() {
-        stroke(255, 255,255);
+        stroke(255, 255, 255);
         line(this.x, this.y, this.x, this.y + 10);
         if (this.y > height) {
             this.y = 0;
@@ -209,7 +228,7 @@ function RainDrop() {
 
 function SnowDrop() {
     this.x = random(0, width);
-    this.y = random(-1000,0);
+    this.y = random(-1000, 0);
     var s = random(5, 10);
     this.show = function() {
         fill(255, 255, 255);
@@ -225,7 +244,7 @@ function SnowDrop() {
 
 function CloudsDrop() {
     this.x = random(0, width);
-    this.y = random(50,250);
+    this.y = random(50, 250);
     this.show = function() {
         fill(255, 255, 255, 80);
         noStroke();
@@ -240,4 +259,13 @@ function CloudsDrop() {
     this.fall = function() {
         this.x = this.x + 1.5;
     };
+}
+
+function press(){
+    image(penguin, width / 2.5, height / 2, paddingImg.width / 2.5, paddingImg.height / 2.5);
+    fill(255, 255, 255);
+            rect(width / 3 - 50, height / 2 - 60, 180, 60, 10);
+            fill(0, 0, 0);
+            text("Ouchhhhhh!", width / 3 + 40, height / 2 - 30);
+            text("Watch Out!!!", width / 3 + 40, height / 2 - 15);
 }

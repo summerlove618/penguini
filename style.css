@@ -24,7 +24,13 @@ p {
     padding-top:20px;
     float:left;
 }
-
+#city{
+    display:none;
+}
+button{
+    background-color:rgba(0,0,0,0);
+    border:none;
+}
 h1 {
     float: left;
     color: #fff;
