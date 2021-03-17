@@ -104,8 +104,8 @@ function draw() {
             fill(255, 255, 255);
             rect(width / 3.6 - 20, height / 2 - 170, 500, 120, 10);
             fill(0, 0, 0);
-            text("It's a little cold today!", width / 2 + 20, height / 2 - 110);
-            text("You can wear a coat!",width / 2 + 20, height / 2-70);
+            text("It's a little cold today!", width / 2 + 15, height / 2 - 115);
+            text("You can wear a coat!",width / 2 + 15, height / 2-75);
             fill(255, 255, 255);
             textSize(18);
         }
