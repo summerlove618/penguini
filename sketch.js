@@ -18,7 +18,7 @@ var penguin;
 
 
 function setup() {
-    canvas = createCanvas(windowWidth, 700);
+    canvas = createCanvas(windowWidth, 1400);
     canvas.position(0, 50);
     var button2 = select('#submit2');
     var button = select('#submit');      
