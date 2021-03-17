@@ -73,11 +73,11 @@ function draw() {
         //City Name
         textSize(60);
         fill(255);
-        text(floor(todaytemp) + "\u2103", 160, 140);
+        text(floor(todaytemp) + "\u2103", 160, 160);
         // average temp
         textSize(40);
-        text("Max: " + floor(todaymax) + "\u2103", 160, 180);
-        text("Min: " + floor(todaymin) + "\u2103", 160, 200);
+        text("Max: " + floor(todaymax) + "\u2103", 160, 220);
+        text("Min: " + floor(todaymin) + "\u2103", 160, 250);
         // max and min temp
 
         //different penguin images according to the temperature
@@ -172,7 +172,7 @@ function draw() {
         } else {
             fill(255, 100 + 10 * (c - 12), 0);
         }
-        ellipse(width - 800, 100, 100, 100); // sun changing colors
+        ellipse(width - 400, 100, 100, 100); // sun changing colors
 
         // background color changes as day and night changes
         if ((7 <= c) && (c <= 18)) {
