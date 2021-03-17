@@ -86,7 +86,7 @@ function draw() {
                 press();
             }
             else{
-            image(paddingImg, width / 2.5, height / 1.5, paddingImg.width / 1.5, paddingImg.height / 1.5);
+            image(paddingImg, width / 2, height / 2, paddingImg.width / 1.5, paddingImg.height / 1.5);
             fill(255, 255, 255);
             rect(width / 3 - 50, height / 2 - 60, 350, 100, 10);
             fill(0, 0, 0);
