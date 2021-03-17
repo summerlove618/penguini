@@ -258,7 +258,7 @@ function CloudsDrop() {
 }
 
 function press(){
-    image(penguin, width / 5, height / 4, paddingImg.width / 5, paddingImg.height / 5);
+    image(penguin, width / 2.5, height / 2, paddingImg.width / 2.5, paddingImg.height / 2.5);
     fill(255, 255, 255);
             rect(width / 3 - 50, height / 2 - 60, 180, 60, 10);
             fill(0, 0, 0);
