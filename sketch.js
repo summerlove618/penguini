@@ -69,15 +69,15 @@ function draw() {
         noStroke();
         textSize(80);
         fill(255, 255, 255);
-        text(weatherdata.name, 200, 150);
+        text(weatherdata.name, 200, 180);
         //City Name
         textSize(60);
         fill(255);
-        text(floor(todaytemp) + "\u2103", 200, 210);
+        text(floor(todaytemp) + "\u2103", 200, 240);
         // average temp
         textSize(40);
-        text("Max: " + floor(todaymax) + "\u2103", 200, 270);
-        text("Min: " + floor(todaymin) + "\u2103", 200, 310);
+        text("Max: " + floor(todaymax) + "\u2103", 200, 300);
+        text("Min: " + floor(todaymin) + "\u2103", 200, 340);
         // max and min temp
 
         //different penguin images according to the temperature
@@ -100,12 +100,12 @@ function draw() {
                 press();
             }
             else{
-            image(coatImg, width / 2, height / 2, paddingImg.width / 1.5, paddingImg.height / 1.5);
+            image(coatImg, width / 2, height / 2 , paddingImg.width / 1.5, paddingImg.height / 1.5);
             fill(255, 255, 255);
-            rect(width / 3 - 50, height / 2 - 60, 350, 100, 10);
+            rect(width / 3 - 30, height / 2 - 60, 350, 100, 10);
             fill(0, 0, 0);
             text("It's a little cold today!", width / 3 + 40, height / 2 - 30);
-            text("You can wear a coat!", width / 3 + 40, height / 2 - 5);
+            text("You can wear a coat!", width / 3 + 40, height / 2);
             fill(255, 255, 255);
             textSize(18);
         }
@@ -173,7 +173,7 @@ function draw() {
         } else {
             fill(255, 100 + 10 * (c - 12), 0);
         }
-        ellipse(width - 200, 100, 100, 100); // sun changing colors
+        ellipse(width - 200, 180, 100, 100); // sun changing colors
 
         // background color changes as day and night changes
         if ((7 <= c) && (c <= 18)) {
