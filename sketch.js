@@ -86,9 +86,9 @@ function draw() {
                 press();
             }
             else{
-            image(paddingImg, width / 2.5, height / 1.5, paddingImg.width / 2.5, paddingImg.height / 2.5);
+            image(paddingImg, width / 2.5, height / 1.5, paddingImg.width / 1.5, paddingImg.height / 1.5);
             fill(255, 255, 255);
-            rect(width / 3 - 50, height / 2 - 60, 180, 60, 10);
+            rect(width / 3 - 50, height / 2 - 60, 350, 100, 10);
             fill(0, 0, 0);
             text("It's so cold today!", width / 3 + 40, height / 2 - 30);
             text("Please wear a padding!", width / 3 + 40, height / 2 - 15);
@@ -100,7 +100,7 @@ function draw() {
                 press();
             }
             else{
-            image(coatImg, width / 2.5, height / 1.5, paddingImg.width / 2.5, paddingImg.height / 2.5);
+            image(coatImg, width / 2.5, height / 1.5, paddingImg.width / 1.5, paddingImg.height / 1.5);
             fill(255, 255, 255);
             rect(width / 3 - 50, height / 2 - 60, 180, 60, 10);
             fill(0, 0, 0);
@@ -114,7 +114,7 @@ function draw() {
                 press();
             }
             else{
-            image(manImg, width / 2.5, height / 1.5, paddingImg.width / 2.5, paddingImg.height / 2.5);
+            image(manImg, width / 2.5, height / 1.5, paddingImg.width / 1.5, paddingImg.height / 1.5);
             fill(255, 255, 255);
             rect(width / 3 - 50, height / 2 - 60, 180, 60, 10);
             fill(0, 0, 0);
@@ -128,7 +128,7 @@ function draw() {
                 press();
             }
             else{
-            image(shirtImg, width / 2.5, height / 1.5, paddingImg.width / 2.5, paddingImg.height / 2.5);
+            image(shirtImg, width / 2.5, height / 1.5, paddingImg.width / 1.5, paddingImg.height / 1.5);
             fill(255, 255, 255);
             rect(width / 3 - 50, height / 2 - 60, 180, 60, 10);
             fill(0, 0, 0);
@@ -142,7 +142,7 @@ function draw() {
                 press();
             }
             else{
-            image(tshirtImg, width / 2.5, height / 1.5, paddingImg.width / 2.5, paddingImg.height / 2.5);
+            image(tshirtImg, width / 2.5, height / 1.5, paddingImg.width / 1.5, paddingImg.height / 1.5);
             fill(255, 255, 255);
             rect(width / 3 - 50, height / 2 - 60, 180, 60, 10);
             fill(0, 0, 0);
@@ -156,7 +156,7 @@ function draw() {
                 press();
             }
             else{
-            image(nasiImg, width / 2.5, height / 1.5, paddingImg.width / 2.5, paddingImg.height / 2.5);
+            image(nasiImg, width / 2.5, height / 1.5, paddingImg.width / 1.5, paddingImg.height / 1.5);
             fill(255, 255, 255);
             rect(width / 3 - 50, height / 2 - 60, 180, 60, 10);
             fill(0, 0, 0);
@@ -258,7 +258,7 @@ function CloudsDrop() {
     };
 }
 
-function press(){
+/*function press(){
     image(penguin, width / 2.5, height / 2, paddingImg.width / 2.5, paddingImg.height / 2.5);
     fill(255, 255, 255);
             rect(width / 3 - 50, height / 2 - 60, 180, 60, 10);
@@ -266,4 +266,4 @@ function press(){
             text("Ouchhhhhh!", width / 3 + 40, height / 2 - 30);
             text("Watch Out!!!", width / 3 + 40, height / 2 - 15);
               textSize(18);
-}
+}*/
