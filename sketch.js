@@ -107,7 +107,7 @@ function draw() {
             text("It's a little cold today!", width / 3 + 40, height / 2 - 30);
             text("You can wear a coat!", width / 3 + 40, height / 2 - 15);
             fill(255, 255, 255);
-            textSize(15);
+            textSize(18);
         }
         } else if ((10 < todaytemp) && (todaytemp <= 20)) {
             if(mouseIsPressed && mouseY > height/2 && mouseX > width/2.5 && mouseX < width/1.8){
@@ -135,7 +135,7 @@ function draw() {
             text("Its a great weather!", width / 3 + 40, height / 2 - 30);
             text("You can wear shirts!", width / 3 + 40, height / 2 - 15);
             fill(255, 255, 255);
-            textSize(15);
+            textSize(18);
         }
         } else if ((25 < todaytemp) && (todaytemp <= 30)) {
             if(mouseIsPressed && mouseY > height/2 && mouseX > width/2.5 && mouseX < width/1.8){
@@ -162,6 +162,7 @@ function draw() {
             fill(0, 0, 0);
             text("Its very hot today!", width / 3 + 40, height / 2 - 30);
             text("You can wear nanings!", width / 3 + 40, height / 2 - 15);
+            textSize(18);
         } 
         }
 
@@ -264,4 +265,5 @@ function press(){
             fill(0, 0, 0);
             text("Ouchhhhhh!", width / 3 + 40, height / 2 - 30);
             text("Watch Out!!!", width / 3 + 40, height / 2 - 15);
+              textSize(18);
 }
