@@ -88,10 +88,10 @@ function draw() {
             else{
             image(paddingImg, width / 2, height / 2, paddingImg.width / 1.5, paddingImg.height / 1.5);
             fill(255, 255, 255);
-            rect(width / 3 - 50, height / 2 - 60, 350, 100, 10);
+            rect(width / 3.6 - 20, height / 2 - 170, 500, 120, 10);
             fill(0, 0, 0);
-            text("It's so cold today!", width / 3 + 40, height / 2 - 30);
-            text("Please wear a padding!", width / 3 + 40, height / 2 - 15);
+            text("It's so cold today!",  width / 2 + 15, height / 2 - 115);
+            text("Please wear a padding!", width / 2 + 15, height / 2-75);
             fill(255, 255, 255);
             textSize(18);
         }
@@ -100,12 +100,12 @@ function draw() {
                 press();
             }
             else{
-            image(coatImg, width / 3, height / 2 , paddingImg.width / 1.5, paddingImg.height / 1.5);
+            image(coatImg, width / 2, height / 2, paddingImg.width / 1.5, paddingImg.height / 1.5);
             fill(255, 255, 255);
             rect(width / 3.6 - 20, height / 2 - 170, 500, 120, 10);
             fill(0, 0, 0);
             text("It's a little cold today!", width / 2 + 15, height / 2 - 115);
-            text("You can wear a coat!",width / 2 + 15, height / 2-75);
+            text("You can wear a coat!", width / 2 + 15, height / 2-75);
             fill(255, 255, 255);
             textSize(18);
         }
@@ -114,12 +114,12 @@ function draw() {
                 press();
             }
             else{
-            image(manImg, width / 2.5, height / 1.5, paddingImg.width / 1.5, paddingImg.height / 1.5);
+            image(manImg, width / 2, height / 2, paddingImg.width / 1.5, paddingImg.height / 1.5);
             fill(255, 255, 255);
-            rect(width / 3 - 50, height / 2 - 60, 180, 60, 10);
+            rect(width / 3.6 - 20, height / 2 - 170, 500, 120, 10);
             fill(0, 0, 0);
-            text("Its a cool weather!", width / 3 + 40, height / 2 - 30);
-            text("You can wear a sweater!", width / 3 + 40, height / 2 - 15);
+            text("Its a cool weather!", width / 2 + 15, height / 2 - 115);
+            text("You can wear a sweater!", width / 2 + 15, height / 2-75);
             fill(255, 255, 255);
             textSize(18);
         }
@@ -128,12 +128,12 @@ function draw() {
                 press();
             }
             else{
-            image(shirtImg, width / 2.5, height / 1.5, paddingImg.width / 1.5, paddingImg.height / 1.5);
+            image(shirtImg, width / 2, height / 2, paddingImg.width / 1.5, paddingImg.height / 1.5);
             fill(255, 255, 255);
-            rect(width / 3 - 50, height / 2 - 60, 180, 60, 10);
+            rect(width / 3.6 - 20, height / 2 - 170, 500, 120, 10);
             fill(0, 0, 0);
-            text("Its a great weather!", width / 3 + 40, height / 2 - 30);
-            text("You can wear shirts!", width / 3 + 40, height / 2 - 15);
+            text("Its a great weather!", width / 2 + 15, height / 2 - 115);
+            text("You can wear shirts!", width / 2 + 15, height / 2-75);
             fill(255, 255, 255);
             textSize(18);
         }
@@ -142,12 +142,12 @@ function draw() {
                 press();
             }
             else{
-            image(tshirtImg, width / 2.5, height / 1.5, paddingImg.width / 1.5, paddingImg.height / 1.5);
+            image(tshirtImg, width / 2, height / 2, paddingImg.width / 1.5, paddingImg.height / 1.5);
             fill(255, 255, 255);
-            rect(width / 3 - 50, height / 2 - 60, 180, 60, 10);
+            rect(width / 3.6 - 20, height / 2 - 170, 500, 120, 10);
             fill(0, 0, 0);
-            text("Its a little hot today!", width / 3 + 40, height / 2 - 30);
-            text("You can wear T-shirts!", width / 3 + 40, height / 2 - 15);
+            text("Its a little hot today!", width / 2 + 15, height / 2 - 115);
+            text("You can wear T-shirts!", width / 2 + 15, height / 2-75);
             fill(255, 255, 255);
             textSize(18);
         }
@@ -156,12 +156,12 @@ function draw() {
                 press();
             }
             else{
-            image(nasiImg, width / 2.5, height / 1.5, paddingImg.width / 1.5, paddingImg.height / 1.5);
+            image(nasiImg, width / 2, height / 2, paddingImg.width / 1.5, paddingImg.height / 1.5);
             fill(255, 255, 255);
-            rect(width / 3 - 50, height / 2 - 60, 180, 60, 10);
+            rect(width / 3.6 - 20, height / 2 - 170, 500, 120, 10);
             fill(0, 0, 0);
-            text("Its very hot today!", width / 3 + 40, height / 2 - 30);
-            text("You can wear nanings!", width / 3 + 40, height / 2 - 15);
+            text("Its very hot today!", width / 2 + 15, height / 2 - 115);
+            text("You can wear nanings!", width / 2 + 15, height / 2-75);
             textSize(18);
         } 
         }
@@ -241,7 +241,7 @@ function SnowDrop() {
 
 function CloudsDrop() {
     this.x = random(0, width);
-    this.y = random(50, 250);
+    this.y = random(180, 400);
     this.show = function() {
         fill(255, 255, 255, 80);
         noStroke();
