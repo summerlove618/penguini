@@ -18,7 +18,7 @@ var penguin;
 
 
 function setup() {
-    canvas = createCanvas(windowWidth, windowHeight);
+    canvas = createCanvas(windowWidth, 700);
     canvas.position(0, 50);
     var button2 = select('#submit2');
     var button = select('#submit');      
@@ -77,7 +77,7 @@ function draw() {
         // average temp
         textSize(40);
         text("Max: " + floor(todaymax) + "\u2103", 160, 220);
-        text("Min: " + floor(todaymin) + "\u2103", 160, 250);
+        text("Min: " + floor(todaymin) + "\u2103", 160, 270);
         // max and min temp
 
         //different penguin images according to the temperature
@@ -86,7 +86,7 @@ function draw() {
                 press();
             }
             else{
-            image(paddingImg, width / 5, height / 4, paddingImg.width / 5, paddingImg.height / 5);
+            image(paddingImg, width / 2.5, height / 2, paddingImg.width / 2.5, paddingImg.height / 2.5);
             fill(255, 255, 255);
             rect(width / 3 - 50, height / 2 - 60, 180, 60, 10);
             fill(0, 0, 0);
@@ -100,7 +100,7 @@ function draw() {
                 press();
             }
             else{
-            image(coatImg, width / 5, height / 4, paddingImg.width / 5, paddingImg.height / 5);
+            image(coatImg, width / 2.5, height / 2, paddingImg.width / 2.5, paddingImg.height / 2.5);
             fill(255, 255, 255);
             rect(width / 3 - 50, height / 2 - 60, 180, 60, 10);
             fill(0, 0, 0);
@@ -114,7 +114,7 @@ function draw() {
                 press();
             }
             else{
-            image(manImg, width / 5, height / 4, paddingImg.width / 5, paddingImg.height / 5);
+            image(manImg, width / 2.5, height / 2, paddingImg.width / 2.5, paddingImg.height / 2.5);
             fill(255, 255, 255);
             rect(width / 3 - 50, height / 2 - 60, 180, 60, 10);
             fill(0, 0, 0);
@@ -128,7 +128,7 @@ function draw() {
                 press();
             }
             else{
-            image(shirtImg, width / 5, height / 4, paddingImg.width / 5, paddingImg.height / 5);
+            image(shirtImg, width / 2.5, height / 2, paddingImg.width / 2.5, paddingImg.height / 2.5);
             fill(255, 255, 255);
             rect(width / 3 - 50, height / 2 - 60, 180, 60, 10);
             fill(0, 0, 0);
@@ -142,7 +142,7 @@ function draw() {
                 press();
             }
             else{
-            image(tshirtImg, width / 5, height / 4, paddingImg.width / 5, paddingImg.height / 5);
+            image(tshirtImg, width / 2.5, height / 2, paddingImg.width / 2.5, paddingImg.height / 2.5);
             fill(255, 255, 255);
             rect(width / 3 - 50, height / 2 - 60, 180, 60, 10);
             fill(0, 0, 0);
@@ -156,7 +156,7 @@ function draw() {
                 press();
             }
             else{
-            image(nasiImg, width / 5, height / 4, paddingImg.width / 5, paddingImg.height / 5);
+            image(nasiImg, width / 2.5, height / 2, paddingImg.width / 2.5, paddingImg.height / 2.5);
             fill(255, 255, 255);
             rect(width / 3 - 50, height / 2 - 60, 180, 60, 10);
             fill(0, 0, 0);
@@ -172,7 +172,7 @@ function draw() {
         } else {
             fill(255, 100 + 10 * (c - 12), 0);
         }
-        ellipse(width - 400, 100, 100, 100); // sun changing colors
+        ellipse(width - 200, 100, 100, 100); // sun changing colors
 
         // background color changes as day and night changes
         if ((7 <= c) && (c <= 18)) {
