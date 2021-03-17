@@ -102,10 +102,10 @@ function draw() {
             else{
             image(coatImg, width / 3, height / 2 , paddingImg.width / 1.5, paddingImg.height / 1.5);
             fill(255, 255, 255);
-            rect(width / 3.2, height / 2 - 100, 350, 100, 10);
+            rect(width / 3.3, height / 2 - 120, 350, 100, 10);
             fill(0, 0, 0);
-            text("It's a little cold today!", width / 3 + 40, height / 2 - 110);
-            text("You can wear a coat!",width / 3 + 40, height / 2-90);
+            text("It's a little cold today!", width / 2 + 40, height / 2 - 70);
+            text("You can wear a coat!",width / 2 + 40, height / 2-50);
             fill(255, 255, 255);
             textSize(18);
         }
