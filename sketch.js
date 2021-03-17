@@ -16,6 +16,10 @@ var nasiImg;
 var item;
 var penguin;
 
+function windowResized() {
+  resizeCanvas(windowWidth, windowHeight);
+}
+
 function setup() {
     canvas = createCanvas(windowWidth, 700);
     canvas.position(0, 50);
