@@ -189,7 +189,7 @@ function draw() {
             for (var j = Rdrop.length - 1; j >= 0; j--) {
                 Rdrop[j].show();
                 Rdrop[j].fall();
-                image(item, width / 1.2, height / 1.5, item.width / 2.5, item.height / 2.5);
+                image(item, width / 1.4, height / 1.7, item.width / 2.5, item.height / 2.5);
             } // raining scene
         }
         if (weatherdata.weather[0].main == "Snow") {
