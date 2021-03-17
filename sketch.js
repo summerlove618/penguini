@@ -73,11 +73,11 @@ function draw() {
         //City Name
         textSize(60);
         fill(255);
-        text(floor(todaytemp) + "\u2103", 200, 240);
+        text(floor(todaytemp) + "\u2103", 200, 250);
         // average temp
         textSize(40);
-        text("Max: " + floor(todaymax) + "\u2103", 200, 300);
-        text("Min: " + floor(todaymin) + "\u2103", 200, 340);
+        text("Max: " + floor(todaymax) + "\u2103", 200, 310);
+        text("Min: " + floor(todaymin) + "\u2103", 200, 350);
         // max and min temp
 
         //different penguin images according to the temperature
@@ -189,7 +189,7 @@ function draw() {
             for (var j = Rdrop.length - 1; j >= 0; j--) {
                 Rdrop[j].show();
                 Rdrop[j].fall();
-                image(item, width / 2, height / 2, item.width / 2.5, item.height / 2.5);
+                image(item, width / 2+10, height / 2-10, item.width / 2.5, item.height / 2.5);
             } // raining scene
         }
         if (weatherdata.weather[0].main == "Snow") {
