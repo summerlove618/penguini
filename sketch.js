@@ -100,12 +100,12 @@ function draw() {
                 press();
             }
             else{
-            image(coatImg, width / 2.5, height / 2 , paddingImg.width / 1.5, paddingImg.height / 1.5);
+            image(coatImg, width / 3, height / 2 , paddingImg.width / 1.5, paddingImg.height / 1.5);
             fill(255, 255, 255);
-            rect(width / 2.5, height / 2 - 100, 350, 100, 10);
+            rect(width / 3.2, height / 2 - 100, 350, 100, 10);
             fill(0, 0, 0);
-            text("It's a little cold today!", width / 3 + 40, height / 2 - 30);
-            text("You can wear a coat!", width / 3 + 40, height / 2);
+            text("It's a little cold today!", width / 3.5, height / 2 - 30);
+            text("You can wear a coat!", width / 3.5, height / 2);
             fill(255, 255, 255);
             textSize(18);
         }
