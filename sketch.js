@@ -86,7 +86,7 @@ function draw() {
                 press();
             }
             else{
-            image(paddingImg, width / 2.5, height / 2, paddingImg.width / 1.5, paddingImg.height / 1.5);
+            image(paddingImg, width / 3, height / 2, paddingImg.width / 1.5, paddingImg.height / 1.5);
             fill(255, 255, 255);
             rect(width / 3.6 - 20, height / 2 - 170, 500, 120, 10);
             fill(0, 0, 0);
@@ -100,7 +100,7 @@ function draw() {
                 press();
             }
             else{
-            image(coatImg, width / 2.5, height / 2, paddingImg.width / 1.5, paddingImg.height / 1.5);
+            image(coatImg, width / 3, height / 2, paddingImg.width / 1.5, paddingImg.height / 1.5);
             fill(255, 255, 255);
             rect(width / 3.6 - 20, height / 2 - 170, 500, 120, 10);
             fill(0, 0, 0);
@@ -114,7 +114,7 @@ function draw() {
                 press();
             }
             else{
-            image(manImg, width / 2.5, height / 2, paddingImg.width / 1.5, paddingImg.height / 1.5);
+            image(manImg, width / 3, height / 2, paddingImg.width / 1.5, paddingImg.height / 1.5);
             fill(255, 255, 255);
             rect(width / 3.6 - 20, height / 2 - 170, 500, 120, 10);
             fill(0, 0, 0);
@@ -128,7 +128,7 @@ function draw() {
                 press();
             }
             else{
-            image(shirtImg, width / 2.5, height / 2, paddingImg.width / 1.5, paddingImg.height / 1.5);
+            image(shirtImg, width / 3, height / 2, paddingImg.width / 1.5, paddingImg.height / 1.5);
             fill(255, 255, 255);
             rect(width / 3.6 - 20, height / 2 - 170, 500, 120, 10);
             fill(0, 0, 0);
@@ -142,7 +142,7 @@ function draw() {
                 press();
             }
             else{
-            image(tshirtImg, width / 2.5, height / 2, paddingImg.width / 1.5, paddingImg.height / 1.5);
+            image(tshirtImg, width / 3, height / 2, paddingImg.width / 1.5, paddingImg.height / 1.5);
             fill(255, 255, 255);
             rect(width / 3.6 - 20, height / 2 - 170, 500, 120, 10);
             fill(0, 0, 0);
@@ -156,7 +156,7 @@ function draw() {
                 press();
             }
             else{
-            image(nasiImg, width / 2.5, height / 2, paddingImg.width / 1.5, paddingImg.height / 1.5);
+            image(nasiImg, width / 3, height / 2, paddingImg.width / 1.5, paddingImg.height / 1.5);
             fill(255, 255, 255);
             rect(width / 3.6 - 20, height / 2 - 170, 500, 120, 10);
             fill(0, 0, 0);
