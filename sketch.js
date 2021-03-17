@@ -69,15 +69,15 @@ function draw() {
         noStroke();
         textSize(80);
         fill(255, 255, 255);
-        text(weatherdata.name, 160, 150);
+        text(weatherdata.name, 200, 150);
         //City Name
         textSize(60);
         fill(255);
-        text(floor(todaytemp) + "\u2103", 160, 210);
+        text(floor(todaytemp) + "\u2103", 200, 210);
         // average temp
         textSize(40);
-        text("Max: " + floor(todaymax) + "\u2103", 160, 270);
-        text("Min: " + floor(todaymin) + "\u2103", 160, 310);
+        text("Max: " + floor(todaymax) + "\u2103", 200, 270);
+        text("Min: " + floor(todaymin) + "\u2103", 200, 310);
         // max and min temp
 
         //different penguin images according to the temperature
