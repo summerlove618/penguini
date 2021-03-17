@@ -13,7 +13,7 @@ body {
     float: left;
     color: #FFF;
     width:100%;
-    height:700px;
+    height:100%;
     background-color: #16191e;
 
 }
@@ -35,6 +35,6 @@ h1 {
     float: left;
     color: #fff;
     font-weight: bold;
-    font-size: 20px;
+    font-size: 4rem;
     padding-left:20px;
 }
