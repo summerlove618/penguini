@@ -19,7 +19,7 @@ var penguin;
 
 function setup() {
     canvas = createCanvas(windowWidth, 1400);
-    canvas.position(0, 50);
+    canvas.position(0, 100);
     var button2 = select('#submit2');
     var button = select('#submit');      
     button.mousePressed(CallWeather);
@@ -102,7 +102,7 @@ function draw() {
             else{
             image(coatImg, width / 3, height / 2 , paddingImg.width / 1.5, paddingImg.height / 1.5);
             fill(255, 255, 255);
-            rect(width / 3.6, height / 2 - 150, 500, 120, 10);
+            rect(width / 3.6 - 30, height / 2 - 180, 500, 120, 10);
             fill(0, 0, 0);
             text("It's a little cold today!", width / 2 + 20, height / 2 - 110);
             text("You can wear a coat!",width / 2 + 20, height / 2-70);
