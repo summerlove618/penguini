@@ -82,11 +82,11 @@ function draw() {
 
         //different penguin images according to the temperature
         if (todaytemp <= -3) {
-            if(mouseIsPressed && mouseY > height/2 && mouseX > width/2.5 && mouseX < width/1.8){
+            if(mouseIsPressed && mouseY > height/1.5 && mouseX > width/2.5 && mouseX < width/1.8){
                 press();
             }
             else{
-            image(paddingImg, width / 2.5, height / 2, paddingImg.width / 2.5, paddingImg.height / 2.5);
+            image(paddingImg, width / 2.5, height / 1.5, paddingImg.width / 2.5, paddingImg.height / 2.5);
             fill(255, 255, 255);
             rect(width / 3 - 50, height / 2 - 60, 180, 60, 10);
             fill(0, 0, 0);
@@ -96,11 +96,11 @@ function draw() {
             textSize(18);
         }
         } else if ((-3 < todaytemp) && (todaytemp <= 10)) {
-            if(mouseIsPressed && mouseY > height/2 && mouseX > width/2.5 && mouseX < width/1.8){
+            if(mouseIsPressed && mouseY > height / 1.5 && mouseX > width/2.5 && mouseX < width/1.8){
                 press();
             }
             else{
-            image(coatImg, width / 2.5, height / 2, paddingImg.width / 2.5, paddingImg.height / 2.5);
+            image(coatImg, width / 2.5, height / 1.5, paddingImg.width / 2.5, paddingImg.height / 2.5);
             fill(255, 255, 255);
             rect(width / 3 - 50, height / 2 - 60, 180, 60, 10);
             fill(0, 0, 0);
@@ -110,11 +110,11 @@ function draw() {
             textSize(18);
         }
         } else if ((10 < todaytemp) && (todaytemp <= 20)) {
-            if(mouseIsPressed && mouseY > height/2 && mouseX > width/2.5 && mouseX < width/1.8){
+            if(mouseIsPressed && mouseY > height / 1.5 && mouseX > width/2.5 && mouseX < width/1.8){
                 press();
             }
             else{
-            image(manImg, width / 2.5, height / 2, paddingImg.width / 2.5, paddingImg.height / 2.5);
+            image(manImg, width / 2.5, height / 1.5, paddingImg.width / 2.5, paddingImg.height / 2.5);
             fill(255, 255, 255);
             rect(width / 3 - 50, height / 2 - 60, 180, 60, 10);
             fill(0, 0, 0);
@@ -124,11 +124,11 @@ function draw() {
             textSize(18);
         }
         } else if ((20 < todaytemp) && (todaytemp <= 25)) {
-            if(mouseIsPressed && mouseY > height/2 && mouseX > width/2.5 && mouseX < width/1.8){
+            if(mouseIsPressed && mouseY > height / 1.5 && mouseX > width/2.5 && mouseX < width/1.8){
                 press();
             }
             else{
-            image(shirtImg, width / 2.5, height / 2, paddingImg.width / 2.5, paddingImg.height / 2.5);
+            image(shirtImg, width / 2.5, height / 1.5, paddingImg.width / 2.5, paddingImg.height / 2.5);
             fill(255, 255, 255);
             rect(width / 3 - 50, height / 2 - 60, 180, 60, 10);
             fill(0, 0, 0);
@@ -138,11 +138,11 @@ function draw() {
             textSize(18);
         }
         } else if ((25 < todaytemp) && (todaytemp <= 30)) {
-            if(mouseIsPressed && mouseY > height/2 && mouseX > width/2.5 && mouseX < width/1.8){
+            if(mouseIsPressed && mouseY > height / 1.5 && mouseX > width/2.5 && mouseX < width/1.8){
                 press();
             }
             else{
-            image(tshirtImg, width / 2.5, height / 2, paddingImg.width / 2.5, paddingImg.height / 2.5);
+            image(tshirtImg, width / 2.5, height / 1.5, paddingImg.width / 2.5, paddingImg.height / 2.5);
             fill(255, 255, 255);
             rect(width / 3 - 50, height / 2 - 60, 180, 60, 10);
             fill(0, 0, 0);
@@ -152,11 +152,11 @@ function draw() {
             textSize(18);
         }
         } else {
-            if(mouseIsPressed && mouseY > height/2 && mouseX > width/2.5 && mouseX < width/1.8){
+            if(mouseIsPressed && mouseY > height / 1.5 && mouseX > width/2.5 && mouseX < width/1.8){
                 press();
             }
             else{
-            image(nasiImg, width / 2.5, height / 2, paddingImg.width / 2.5, paddingImg.height / 2.5);
+            image(nasiImg, width / 2.5, height / 1.5, paddingImg.width / 2.5, paddingImg.height / 2.5);
             fill(255, 255, 255);
             rect(width / 3 - 50, height / 2 - 60, 180, 60, 10);
             fill(0, 0, 0);
